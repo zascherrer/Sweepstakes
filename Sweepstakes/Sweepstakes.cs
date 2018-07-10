@@ -8,8 +8,8 @@ namespace Sweepstakes
 {
     public class Sweepstakes
     {
-        Dictionary<Guid, Contestant> registration;
-        List<Guid> registrationNumbers;
+        public Dictionary<Guid, Contestant> registration;
+        public List<Guid> registrationNumbers;
         Random random;
         string name;
 
