@@ -8,9 +8,15 @@ namespace Sweepstakes
 {
     public static class UserInterface
     {
+        public static Sweepstakes sweepstakes;
+
+        static UserInterface()
+        {
+            sweepstakes = new Sweepstakes("devCode");
+        }
 
 
-        public static void EnterContestant(Dictionary<Guid, Contestant> registration, List<Guid> registrationNumbers)
+        public static void EnterContestant()
         {
             Contestant contestant = EnterContestantInformation();
             int numberOfTickets = SetNumberOfTickets();
@@ -18,8 +24,7 @@ namespace Sweepstakes
             for(int i = 0; i < numberOfTickets; i++)
             {
                 Contestant newTicket = new Contestant(contestant.firstName, contestant.lastName, contestant.email);
-                registrationNumbers.Add(newTicket.registrationNumber);
-                registration.Add(newTicket.registrationNumber, newTicket);
+                sweepstakes.RegisterContestant(newTicket);
             }
         }
 
