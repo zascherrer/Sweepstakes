@@ -25,5 +25,10 @@ namespace Sweepstakes
             Sweepstakes sweepstakes = sweepstakesStack.Pop();
             return sweepstakes;
         }
+
+        public int GetNumberOfSweepstakes()
+        {
+            return sweepstakesStack.Count;
+        }
     }
 }

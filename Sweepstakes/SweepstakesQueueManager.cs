@@ -27,5 +27,10 @@ namespace Sweepstakes
             return sweepstakes;
         }
 
+        public int GetNumberOfSweepstakes()
+        {
+            return sweepstakesQueue.Count;
+        }
+
     }
 }

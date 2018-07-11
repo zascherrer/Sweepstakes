@@ -18,7 +18,7 @@ namespace Sweepstakes
             firstName = "John";
             lastName = "Doe";
             email = "john.doe@gmail.com";
-            registrationNumber = new Guid();
+            registrationNumber = Guid.NewGuid();
         }
 
         public Contestant(string firstName, string lastName, string email)
@@ -26,7 +26,7 @@ namespace Sweepstakes
             this.firstName = firstName;
             this.lastName = lastName;
             this.email = email;
-            registrationNumber = new Guid();
+            registrationNumber = Guid.NewGuid();
         }
     }
 }

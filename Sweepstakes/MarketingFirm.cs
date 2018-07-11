@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Sweepstakes
 {
-    class MarketingFirm
+    public class MarketingFirm
     {
-        ISweepstakesManager sweepstakesManager;
-        ICreateSweepstakesManager sweepstakesManagerFactory;
+        public ISweepstakesManager sweepstakesManager;
+        private ICreateSweepstakesManager sweepstakesManagerFactory;
 
         public MarketingFirm()
         {
