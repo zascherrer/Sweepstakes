@@ -45,6 +45,7 @@ namespace Sweepstakes
             string winnerName = winner.firstName + " " + winner.lastName;
 
             NotifyContestants(winner);
+            MailSender.SendMail("Congratulations, " + winnerName + " you've won the " + name + " Sweepstakes!!!", winner.email);
 
             return winnerName;
         }

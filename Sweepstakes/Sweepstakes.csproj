@@ -43,8 +43,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Contestant.cs" />
+    <Compile Include="EmailPassword.cs" />
     <Compile Include="ICreateSweepstakesManager.cs" />
     <Compile Include="ISweepstakesManager.cs" />
+    <Compile Include="MailSender.cs" />
     <Compile Include="MarketingFirm.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
